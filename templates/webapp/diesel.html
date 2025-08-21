@@ -1,0 +1,64 @@
+
+{% extends 'webapp/index.html' %}
+{% load static %}
+{% block home %}
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h2>Diesel Oil</h2>
+            <div class="div-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="main-services">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+            <h6>Service</h6>
+            <h4>Diesel Oil</h4>
+          </div>
+        <div class="col-lg-5 col-md-5">
+            <img src="{%static 'assets/images/engine.jpeg'%}" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 offset-lg-1 offset-md-1">
+          
+            <p class="text-justify" style="text-align: justify;">Diesel fuel is a hydrocarbon-based liquid fuel that is closely related to petrol but has distinct properties. It is commonly used in diesel engines found in trucks, buses, ships, and heavy machinery due to its high energy density and efficiency. Diesel engines operate on a compression-ignition principle, where the fuel is ignited by the heat generated during compression, rather than a spark as in petrol engines. This results in improved fuel efficiency and torque. Diesel fuel is a crucial component of the global transportation and logistics industry, but it also generates concerns regarding air quality due to the emission of particulate matter and nitrogen oxides. Efforts to mitigate these environmental impacts have led to the development of cleaner-burning diesel engines and the exploration of alternative fuels.</p>
+
+            <a class="btn btn-secondary mt-3" style="background-color:#ff511a;color:white;border-color: ff511a;">Request a Callback</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4> Become a <em>Distributor </em> of 
+            <br> AROMANEEL With Zero 
+            Security Deposit</h4>
+        </div>
+        <div class="col-lg-7">
+          <div class="buttons">
+            <div class="green-button">
+              <a href="#">Become a Distributer</a>
+            </div>
+            <div class="orange-button">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}

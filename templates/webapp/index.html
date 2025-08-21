@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Aromaneel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/templatemo-574-mexant.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/owl.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/animate.css'%}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+
+<style>
+  hr {
+    /* margin: 1rem 0; */
+    /* color: inherit; */
+    background-color: white;
+    /* border: 3px solid red; */
+    /* opacity: .25; */
+}
+</style>
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="{% url 'home'%}" class="logo">
+                          <img src="static/assets/images/logo.png" alt="" style="width:200px;">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="{%url 'home'%}" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#about">About</a></li>
+
+                          <li class="has-sub">
+                            <a href="javascript:void(0)">product</a>
+                            <ul class="sub-menu">
+                                <li><a href="{%url 'motercycle'%}">Motercycle</a></li>
+                                <li><a href="{%url 'comingsoon'%}">Car</a></li>
+                               
+
+                            </ul>
+                        </li>
+
+                          <!-- <li class="scroll-to-section"><a href="#services">Services</a></li> -->
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Services</a>
+                              <ul class="sub-menu">
+                                  <li><a href="{%url 'petrol'%}">Petrol </a></li>
+                                  <li><a href="{%url 'diesel'%}">Diesel</a></li>
+                                  <li><a href="{%url 'crude'%}">Crude Oil</a></li>
+                                  <li><a href="{%url 'partner'%}">Become a Distributer</a></li>
+                                  <li><a href="{%url 'payment'%}">Payment</a></li>
+                                  <li><a href="{%url 'returnpolicy'%}">Return Policy</a></li>
+
+
+                              </ul>
+                          </li>
+
+                          <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
+                          <li class="scroll-to-section"><a href="{%url 'contact'%}">Contact</a></li>
+
+                          <li><a href="javascript:void(0)">support@aromaneel.com</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  {% block home %}
+{% endblock %}
+
+    <!-- //////////////////////////////////////////////////////// -->
+
+    <footer id="Footer"style="background-color:#212741;" class="page-footer font-small stylish-color-dark pt-4">
+      <div style="background-color:#212741;" class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <!-- Content -->
+            <h5 class="text-uppercase text-white font-weight-bold mt-3 mb-4">About our Company</h5>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+            <p>We manufacture & deliver moto engine oil  that create value & competitive advantage, we are a Mumbai based company. </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold text-white">Services</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+            <p>
+              <a href="{%url 'petrol'%}">Petrol Oil</a>
+            </p>
+            <p>
+              <a href="{%url 'diesel'%}">Diesel Oil</a>
+            </p>
+            <p>
+              <a href="{%url 'crude'%}">Crude Oil</a>
+            </p>
+            <p>
+              <a href="{%url 'partner'%}">Become a Distributer</a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold text-white">Useful links</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+            <p>
+              <a href="{% url 'home'%}">Home</a>
+            </p>
+            <p>
+              <a href="#about">About</a>
+            </p>
+            <p>
+              <a href="#testimonials">Testimonials</a>
+            </p>
+            <p>
+              <a href="{%url 'contact'%}">Contact</a>
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold text-white">Contact</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i>&nbsp;412, 4th floor, lijmima complex, near infinity mall, mindspace malad west mumbai 400064
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>&nbsp;support@aromaneel.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i>&nbsp; +91 7009000949</p>
+            <p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Call to action -->
+    
+      <!-- Social buttons -->
+      <div class="hover-effect1">
+      <ul  style="background-color:#212741" class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+        <span class="text-white h4 mr-5">Follow US : -</span> &nbsp;&nbsp; <a href="https://www.facebook.com/aromaneellubricant" target="_blank" title="Facebook h1"><i class="fa-brands fa-facebook h1 text-white"></i>
+          </a>
+        </li>
+        <!-- <li class="list-inline-item">
+          <a href="https://www.twitter.com/codewithfaraz" title="Twitter"><i class="fa fa-twitter"></i></a>
+        </li> -->
+        <li class="list-inline-item">
+          <a href="https://instagram.com/aromaneel_lubricants?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" title="Instagram h1"><i class="fa-brands fa-instagram h1 text-white"></i></a>
+        </li>
+        <!-- <li class="list-inline-item">
+          <a href="https://www.youtube.com/@codewithfaraz" title="Youtube"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#." title="Github"><i class="fa fa-github"></i></a>
+        </li> -->
+      </ul>
+    </div>
+    <hr>
+
+    <div  style="background-color:#212741" class="footer-copyright text-center text-white py-3">
+      Copyright© 2023: Design and Develop by Aromaneel
+    </div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/65411f68a84dd54dc487305b/1he365cbb';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+    </footer>
+
+
+
+    <!-- ///////////////////////////////////////////////////////////// -->
+
+      
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{%static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{%static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+    <script src="{%static 'assets/js/isotope.min.js'%}"></script>
+    <script src="{%static 'assets/js/owl-carousel.js'%}"></script>
+
+    <script src="{%static 'assets/js/tabs.js'%}"></script>
+    <script src="{%static 'assets/js/swiper.js'%}"></script>
+    <script src="{%static 'assets/js/custom.js'%}"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+  </body>
+</html>

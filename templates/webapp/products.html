@@ -1,0 +1,50 @@
+
+{% extends 'webapp/index.html' %}
+{% load static %}
+{% block home %}
+<style>
+    .imgk{
+        height: 280px;
+    }
+</style>
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h2>Our Products</h2>
+            <div class="div-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-5">
+            <div class="card shadow">
+                <div class="card-body">
+                  <a href="{%url 'motercycle'%}"> <img src="{%static 'mt.jpg'%}" class="imgk img-fluid w-100">
+                    <h1 class="card-title text-center mt-3 text-danger font-weight-bold">Motercycle</h1></a> 
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <div class="card shadow">
+                <div class="card-body">
+                     <a href="{%url 'comingsoon'%}"> <img src="{%static 'car.jpg'%}" class="imgk img-fluid w-100"></a>
+
+                    <h1 class="card-title text-center text-danger mt-3 font-weight-bold">Cars</h1>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  {% endblock %}

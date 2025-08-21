@@ -1,0 +1,91 @@
+
+{% extends 'webapp/index.html' %}
+{% load static %}
+{% block home %}
+
+<style>
+  section {
+    margin-top: 35px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+</style>
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h2>Payment</h2>
+            <div class="div-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+
+
+<!-- sidebar + content -->
+<section class="">
+  <div class="container">
+    <div class="div class col-lg-8 col-md-8 justify-content-center mx-auto text-center">
+   
+      <p class="mb-3">Aromaneel, the essence of engine care! We're not just an oil brand;
+        we're your engine's best friend. Crafted with passion and expertise, 
+       our engine oils are designed to optimize performance, reduce wear, and increase your vehicle's lifespan.
+        Unleash the full potential of your engine with Aromaneel.</p>
+      <!-- content -->
+       </div>
+
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-5 col-md-5">
+            <div class="card shadow-md border rounded-3 p-2">
+              <div class="card-body">
+
+                    <div class="row justify-content-center mb-1">
+                        <h4 class="text-white text-center bg-dark p-2">Scan and Pay <span><i class="fa-regular fa-hand-point-down ml-3"></i></span>
+                       </h4>
+                       <hr/>
+                    </div>
+                    <div class="row mb-1">
+                      <h5 class="text-success text-center"> merchant326262.augp@aubank</h5>
+                    </div>
+                    <div class="row">
+                      <h6 class="text-info text-center"><b>Bank Name -  Au Small Finance Bank</b></h6> 
+                     </div>
+                    <div class="row">
+                     <h6 class="text-danger text-center"><b>Account No - 2302234252975282</b></h6> 
+                    </div>
+                    
+                    <div class="row">
+                      <h6 class="text-info text-center"><b>Account Type - Current</b></h6> 
+                     </div>
+                    <div class="row">
+
+                      <img src="{%static 'qr.jpg'%}" class="w-100 img-fluid" />
+                   
+                  
+                  </div>
+               
+                              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <hr />
+
+   
+    </div>
+  </div>
+</section>
+
+
+
+
+  {% endblock %}

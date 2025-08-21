@@ -1,0 +1,64 @@
+
+{% extends 'webapp/index.html' %}
+{% load static %}
+{% block home %}
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h2>Petrol Oil</h2>
+            <div class="div-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="main-services">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+            <h6>Service</h6>
+            <h4>Petrol Oil</h4>
+          </div>
+        <div class="col-lg-5 col-md-5">
+            <img src="{%static 'assets/images/petrol.avif'%}" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 offset-lg-1 offset-md-1">
+          
+            <p class="text-justify" style="text-align: justify;">Petrol, also known as gasoline, is a common and widely used fuel derived from crude oil through a refining process. It is a vital source of energy for internal combustion engines, primarily found in automobiles, motorcycles, and small power equipment. Petrol is known for its high energy density, making it an efficient and convenient fuel for transportation. However, its combustion produces carbon dioxide emissions, contributing to air pollution and climate change concerns. As the world seeks more sustainable energy sources, research and development in alternative fuels and electric vehicles continue to grow, aiming to reduce the environmental impact associated with petrol consumption.</p>
+
+            <a class="btn btn-secondary mt-3" style="background-color:#ff511a;color:white;border-color: ff511a;">Request a Callback</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4> Become a <em>Distributor </em> of 
+            <br> AROMANEEL With Zero 
+            Security Deposit</h4>
+        </div>
+        <div class="col-lg-7">
+          <div class="buttons">
+            <div class="green-button">
+              <a href="#">Become a Distributer</a>
+            </div>
+            <div class="orange-button">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
